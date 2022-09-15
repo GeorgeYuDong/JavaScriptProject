@@ -1,0 +1,15 @@
+var a = 10;
+var b = 0o12;
+var c = 0xA;
+var d = 3.14;
+var e = 3.14e2;
+document.write("十进制10:"+ a);
+document.write("<br/>");
+document.write("八进制12:"+ b);
+document.write("<br/>");
+document.write("16进制A:"+ c);
+document.write("<br/>");
+document.write("浮点数:"+ d);
+document.write("<br/>");
+document.write("科学计数法3.14e2:"+ e);
+document.write("<br/>");

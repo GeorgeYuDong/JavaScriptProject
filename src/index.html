@@ -7,6 +7,10 @@
 <body>
 
 <script>
+    //document内置DOM文档对象(单行注释)
+    /*
+     多行注释
+     */
     document.write("Hello, Javascript")
 </script>
 
@@ -18,7 +22,70 @@
 
 <p id="text"> this a text which could be hidden </p>
 
+<!--引用js包下hello.js-->
 <script src="js/hello.js"></script>
+<br/>
+
+<p>变量定义:</p>
+<script>
+    var x = 1;
+    document.write("value of x is:" + x);
+</script>
+
+<p>变量定义关键字var可有可无:</p>
+<script>
+    x = 2;
+    document.write("value of x is:" + x);
+</script>
+
+<p>变量命名开头_$和字母。其他部分$_字母和数字</p>
+
+<br/>
+<p>调试方法一：alert(1).在需要调试处alert,逐步找到问题所在:</p>
+<script>
+    x = 10;
+   // alert(1);
+    document.write("value of x is: " + x);
+   // alert(2);
+//    document.write1(1);
+</script>
+<p>调试方法二：执行ctrl+shift+I,打开chrome开发者工具，可看到问题所在</p>
+<br/>
+<p>调试方法三：执行ctrl+shift+I,js往console.log写日志，但不会显示在浏览器上。打开chrome开发者工具，可找到console查找日志信息</p>
+<script>
+    x = 20;
+    console.log("x is:" + x);
+    document.write("x is " + x);
+    console.log("end")
+    console.log("abc")
+</script>
+
+<p>变量声明未赋值：undefined</p>
+<script>
+    var y;
+    document.write("y is " + y);
+    document.write("<br>");
+</script>
+
+<script>
+    var x = true;
+    var y = false;
+    document.write("Boolean value of x is: " + x);
+    document.write("<br>")
+    document.write("Boolean value of y is: " + y);
+</script>
+
+<p>数字</p>
+<script src="js/Number.js"></script>
+
+<p>无字符概念，单双引号都是字符串:</p>
+<script src="js/String.js"></script>
+
+<p>js变量是动态类型:</p>
+<script src="js/dynamicType.js"></script>
+
+<p>判断js变量类型:</p>
+<script src="js/typeOfValue.js"></script>
 
 </body>
 </html>
