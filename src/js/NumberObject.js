@@ -33,7 +33,7 @@ document.write("<br/>")
 document.write("正确判断是否为NaN,调用isNaN(a),返回：" + isNaN(a))
 
 a = new Number("123")
-b = a.valueOf()
+b = a.valueOf() //基本类型
 document.write("<br/>")
 document.write("<br/>")
 document.write("对象a的类型为：" + typeof a)
